@@ -25,7 +25,7 @@ body{
 	font-size: 17px;
 	border:2px solid #DDD;
 	text-align:right;
-	p{text-align:left;}
+	p{text-align:center;}
 }
 
 .nuevos-post{
@@ -105,9 +105,14 @@ body{
 // - FIN DE MUESTRAS DE POST - //
 
 aside{
-	background:#fff;
-	border:2px solid #09D;
 	height:600px;
+	.public{
+		background:#fff;
+		border:2px solid #09D;
+		width: 300px;
+		float: right;
+		height:600px;
+	}
 }
 
 
@@ -120,7 +125,7 @@ footer{
 	margin-top:80px;
 	text-align:right;
 	img{
-		width: 150px;
+		width: 7%;
 	}
 }
 // - - FIN DE FOOTER - - //
