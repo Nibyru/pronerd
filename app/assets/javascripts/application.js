@@ -17,3 +17,14 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+
+$(document).ready(function(){
+	$(".submenu").hide();
+	$(".menu .clickmenu a").click(function(event){
+		var desplegable = $(this).next();
+		$('.submenu').not(desplegable).slideUp('fast');
+			desplegable.slideToggle('fast');
+			event.preventDefault();
+	})
+});

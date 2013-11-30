@@ -11,6 +11,7 @@ gem 'foundation-rails'
 gem 'inherited_resources'
 gem 'devise'
 gem 'slim', '~> 2.0.2'
+gem 'font-awesome-rails', '~> 4.0.3'
 
 group :development do
   gem 'better_errors'
