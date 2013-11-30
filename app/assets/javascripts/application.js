@@ -16,15 +16,12 @@
 //= require turbolinks
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
 
 
 $(document).ready(function(){
-	$(".submenu").hide();
+	$(document).foundation();
+
 	$(".menu .clickmenu a").click(function(event){
-		var desplegable = $(this).next();
-		$('.submenu').not(desplegable).slideUp('fast');
-			desplegable.slideToggle('fast');
-			event.preventDefault();
+		$('.submenu').toggle();
 	})
 });
