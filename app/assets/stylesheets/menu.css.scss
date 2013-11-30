@@ -1,0 +1,78 @@
+nav{
+	text-align:right;
+	.logo{
+		border:2px solid #AAA;
+		width: 12em;
+		background:#fff;
+	}
+
+	p{
+		border-top:2px solid #E0E0E0;
+		border-bottom:2px solid #E0E0E0;
+		font-size: 0.85rem;
+		margin: 10px 0px;
+		padding: 5px 0px;
+	}
+
+// - - - MENU - - - //
+	ul{
+		margin:0;
+		li{
+			margin: 6px 0px !important;
+			padding:7px 0px;
+			font-weight: bold;
+			font-size: 0.9rem;
+			line-height: 1.3em;
+			text-transform: uppercase;
+			
+			a{color:#000;}
+			a:hover{
+				color:#82AD38;
+				text-decoration: none;
+			}
+
+			i{padding-left:3px;font-size:1.1em;}
+		}
+		.submenu{
+		 	li{
+		 		display: none;
+				padding: 5px 0px 0px 0px;
+				font-weight: normal;
+				font-style: italic;
+				margin:0;
+				&:hover{color:#82AD38;}
+			}
+		}
+	}
+
+// - - FIN DE MENU - - //
+
+
+// - - - BUSCADOR - - - //
+	#searchbox{
+		min-height: 37px;
+		margin:15px 0 20px 0;
+		.buscador{
+			float: right;
+			width: 86.5%;
+		}
+		.search_btn {
+			float: right;
+			font-size: 1.2rem;
+			padding: 7px 8px;
+			background: #000;
+		}
+	}
+// - - FIN DE BUSCADOR - - //
+
+	.iconos-sociales{
+		a{
+			color:#000;
+			font-size: 1.6rem;
+			margin-left: 10px;
+			text-decoration: none;
+			&:hover{color:#82AD38;}
+		}
+	}
+}
+
