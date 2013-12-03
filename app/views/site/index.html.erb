@@ -10,7 +10,7 @@
 		<section>
 			<div class="row">
 				<div id="frases" class="large-10 large-offset-1 columns">
-					<p>En Microsoft siempre estuvimos a favor del Open Source. Enseñar a los niños el uso de software libre en las escuelas, formará individuos con sentido de libertad.</p>
+					<p>En Microsoft siempre estuvimos totalmente a favor del Open Source. Enseñar a los niños el uso de software libre en las escuelas, formará individuos con sentido de libertad.</p>
 					<i>Bill Gates</i>
 					<!-- <p>La mayoría de los buenos programadores programan no porque esperan que les paguen o que el público los adore, sino porque programar es divertido.</p>
 					<i>Linus Torvalds</i> -->
@@ -21,44 +21,39 @@
 			<div class="row">
 				<div class="nuevos-post large-10 large-offset-1 columns">
 					<h4>Nuevos Post</h4>
-					<div class="slider">
-						<div class="orbit-container">
-						  <ul data-orbit class="example-orbit orbit-slides-container">
-						    <li>
-						      <img src="http://placehold.it/1000x300/A92B48/fff" alt="slide 1" />
-						      <div class="orbit-caption">
-						        Caption One.
-						      </div>
-						    </li>
-						    <li class="active">
-						      <img src="http://placehold.it/1000x300/EE964D/fff" alt="slide 2" />
-						      <div class="orbit-caption">
-						        Caption Two.
-						      </div>
-						    </li>
-						    <li>
-						      <img src="http://placehold.it/1000x300/FDC43D/fff" alt="slide 3" />
-						      <div class="orbit-caption">
-						        Caption Three.
-						      </div>
-						    </li>
-						  </ul>
-
-						  <!-- Navigation Arrows -->
-						  <a href="#" class="orbit-prev">Prev <span></span></a>
-						  <a href="#" class="orbit-next">Next <span></span></a>
-
-						  <!-- Slide Numbers -->
-						  <div class="orbit-slide-number">
-						    <span>1</span> of <span>3</span>
-						  </div>
-
-						  <!-- Timer and Play/Pause Button -->
-						  <div class="orbit-timer">
-						    <span></span>
-						    <div class="orbit-progress"></div>
-						  </div>
-						</div>
+					<div class="orbit-container">
+						<ul class="example-orbit" data-orbit>
+							<li>
+								<%= image_tag("img01.jpg", alt:"slide 1") %>
+								<div class="orbit-caption">
+									Caption One.
+								</div>
+							</li>
+							<li>
+								<%= image_tag("img02.jpg", alt:"slide 2") %>
+								<div class="orbit-caption">
+									Caption Two.
+								</div>
+							</li>
+							<li>
+								<%= image_tag("img03.jpg", alt:"slide 3") %>
+								<div class="orbit-caption">
+									Caption Three.
+								</div>
+							</li>
+							<li>
+								<%= image_tag("img01.jpg", alt:"slide 4") %>
+								<div class="orbit-caption">
+									Caption Four.
+								</div>
+							</li>
+							<li>
+								<%= image_tag("img02.jpg", alt:"slide 5") %>
+								<div class="orbit-caption">
+									Caption Five.
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -86,7 +81,7 @@
 				</div>
 
 				<div class="row">
-					<%= image_tag("img01.png") %>
+					<%= image_tag("img02.jpg") %>
 				</div>
 
 				<div class="row">
@@ -107,9 +102,9 @@
 				</div>
 
 				<div class="row etiquetas">
-					<i class="fa fa-tag"></i><p>Html5</p>
-					<i class="fa fa-tag"></i><p>CSS3</p>
-					<i class="fa fa-tag"></i><p>Jquery</p>
+					<a><i class="fa fa-tag"></i><p>Html5</p></a>
+					<a><i class="fa fa-tag"></i><p>CSS3</p></a>
+					<a><i class="fa fa-tag"></i><p>Jquery</p></a>
 				</div>
 			</div>
   	<% end %>
@@ -129,7 +124,7 @@
 				</div>
 
 				<div class="row">
-					<%= image_tag("img01.png") %>
+					<%= image_tag("img01.jpg") %>
 				</div>
 
 				<div class="row">
@@ -150,9 +145,9 @@
 				</div>
 
 				<div class="row etiquetas">
-					<i class="fa fa-tag"></i><p>Html5</p>
-					<i class="fa fa-tag"></i><p>CSS3</p>
-					<i class="fa fa-tag"></i><p>Jquery</p>
+					<a><i class="fa fa-tag"></i><p>Html5</p></a>
+					<a><i class="fa fa-tag"></i><p>CSS3</p></a>
+					<a><i class="fa fa-tag"></i><p>Jquery</p></a>
 				</div>
 			</div>
   	<% end %>

@@ -1,3 +1,5 @@
+$verde: #82AD38;
+
 nav{
 	text-align:right;
 	max-width: 300px;
@@ -28,7 +30,7 @@ nav{
 			
 			a{color:#000;}
 			a:hover{
-				color:#82AD38;
+				color:$verde;
 				text-decoration: none;
 			}
 
@@ -41,7 +43,7 @@ nav{
 				font-weight: normal;
 				font-style: italic;
 				margin:0;
-				&:hover{color:#82AD38;}
+				&:hover{color:$verde;}
 			}
 		}
 	}
@@ -72,8 +74,9 @@ nav{
 			font-size: 1.6rem;
 			margin-left: 10px;
 			text-decoration: none;
-			&:hover{color:#82AD38;}
+			&:hover{color:$verde;}
 		}
 	}
 }
 
+@import "foundation/components/orbit";
