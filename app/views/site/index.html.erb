@@ -1,12 +1,5 @@
-<!--    MENU    -->
 <div class="row">
-	<div class="large-3 columns">
-		<%= render "shared/menu" %>
-	</div>
-<!--    MENU    -->
-
-
-	<div class="large-6 columns">
+	<div class="large-12 columns">
 		<section>
 			<div class="row">
 				<div id="frases" class="large-10 large-offset-1 columns">
@@ -19,7 +12,7 @@
 			</div>
 
 			<div class="row">
-				<div class="nuevos-post large-10 large-offset-1 columns">
+				<div class="large-10 large-offset-1 columns nuevos-post">
 					<h4>Nuevos Post</h4>
 					<div class="orbit-container">
 						<ul class="example-orbit" data-orbit>
@@ -58,99 +51,88 @@
 				</div>
 			</div>
 
+			<div class="row">
+				<div class="large-12 columns mas-visitados">
+					<h4>Mas Visitados</h4>
+
+			  	<% 3.times do %>
+						<div class="large-8 large-offset-2 columns minipost">
+							<div class="row">
+								<h5>C: Funciones. Pasaje de parámetros por valor y por referencia</h5>
+							</div>
+
+							<div class="row">
+								<%= image_tag("img02.jpg") %>
+							</div>
+
+							<div class="row">
+								<div class="large-4 columns detalles">
+									<span>
+										<i class="fa fa-calendar"></i><p>Septh, 05th, 2013</p>
+									</span>
+									<span>
+										<i class="fa fa-comments-o"></i><p>5 Comments</p>
+									</span>
+									<span>
+										<i class="fa fa-share"></i><p>24 Shares</p>
+									</span>
+								</div>
+								<div class="large-8 columns descripcion">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus, lectus quis accumsan ultrices, sapien nibh sodales neque, vitae lacinia orci odio vel mauris. Sed eget egestas quam, id imperdiet quam. In eleifend tempor erat, eget scelerisque tellus imperdiet nec. Fusce ornare porttitor ante.</p>
+								</div>
+							</div>
+
+							<div class="row etiquetas">
+								<a><i class="fa fa-tag"></i><p>Html5</p></a>
+								<a><i class="fa fa-tag"></i><p>CSS3</p></a>
+								<a><i class="fa fa-tag"></i><p>Jquery</p></a>
+							</div>
+						</div>
+			  	<% end %>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="large-12 columns otros-post">
+					<h4>Otros Post</h4>
+
+					<% 3.times do %>
+						<div class="large-8 large-offset-2 columns minipost">
+							<div class="row">
+								<h5>C: Funciones. Pasaje de parámetros por valor y por referencia</h5>
+							</div>
+
+							<div class="row">
+								<%= image_tag("img01.jpg") %>
+							</div>
+
+							<div class="row">
+								<div class="large-4 columns detalles">
+									<span>
+										<i class="fa fa-calendar"></i><p>Septh, 05th, 2013</p>
+									</span>
+									<span>
+										<i class="fa fa-comments-o"></i><p>5 Comments</p>
+									</span>
+									<span>
+										<i class="fa fa-share"></i><p>24 Shares</p>
+									</span>
+								</div>
+								<div class="large-8 columns descripcion">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus, lectus quis accumsan ultrices, sapien nibh sodales neque, vitae lacinia orci odio vel mauris. Sed eget egestas quam, id imperdiet quam. In eleifend tempor erat, eget scelerisque tellus imperdiet nec. Fusce ornare porttitor ante.</p>
+								</div>
+							</div>
+
+							<div class="row etiquetas">
+								<a><i class="fa fa-tag"></i><p>Html5</p></a>
+								<a><i class="fa fa-tag"></i><p>CSS3</p></a>
+								<a><i class="fa fa-tag"></i><p>Jquery</p></a>
+							</div>
+						</div>
+			  	<% end %>
+				</div>
+			</div>
 		</section>
 	</div>
-
-
-<!--    PUBLICIDAD    -->
-	<div class="large-3 columns">
-		<%= render "shared/publicidad" %>
-	</div>
 </div>
-<!--    PUBLICIDAD    -->
-
-
-<div class="row">
-	<div class="large-12 columns mas-visitados">
-		<h4>Mas Visitados</h4>
-
-  	<% 3.times do %>
-			<div class="large-4 columns minipost">
-				<div class="row">
-					<h5>C: Funciones. Pasaje de parámetros por valor y por referencia</h5>
-				</div>
-
-				<div class="row">
-					<%= image_tag("img02.jpg") %>
-				</div>
-
-				<div class="row">
-					<div class="large-4 columns detalles">
-						<span>
-							<i class="fa fa-calendar"></i><p>Septh, 05th, 2013</p>
-						</span>
-						<span>
-							<i class="fa fa-comments-o"></i><p>5 Comments</p>
-						</span>
-						<span>
-							<i class="fa fa-share"></i><p>24 Shares</p>
-						</span>
-					</div>
-					<div class="large-8 columns descripcion">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus, lectus quis accumsan ultrices, sapien nibh sodales neque, vitae lacinia orci odio vel mauris. Sed eget egestas quam, id imperdiet quam. In eleifend tempor erat, eget scelerisque tellus imperdiet nec. Fusce ornare porttitor ante.</p>
-					</div>
-				</div>
-
-				<div class="row etiquetas">
-					<a><i class="fa fa-tag"></i><p>Html5</p></a>
-					<a><i class="fa fa-tag"></i><p>CSS3</p></a>
-					<a><i class="fa fa-tag"></i><p>Jquery</p></a>
-				</div>
-			</div>
-  	<% end %>
-
-	</div>
-</div>
-
-
-<div class="row">
-	<div class="large-12 columns otros-post">
-		<h4>Otros Post</h4>
-
-		<% 3.times do %>
-			<div class="large-4 columns minipost">
-				<div class="row">
-					<h5>C: Funciones. Pasaje de parámetros por valor y por referencia</h5>
-				</div>
-
-				<div class="row">
-					<%= image_tag("img01.jpg") %>
-				</div>
-
-				<div class="row">
-					<div class="large-4 columns detalles">
-						<span>
-							<i class="fa fa-calendar"></i><p>Septh, 05th, 2013</p>
-						</span>
-						<span>
-							<i class="fa fa-comments-o"></i><p>5 Comments</p>
-						</span>
-						<span>
-							<i class="fa fa-share"></i><p>24 Shares</p>
-						</span>
-					</div>
-					<div class="large-8 columns descripcion">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus, lectus quis accumsan ultrices, sapien nibh sodales neque, vitae lacinia orci odio vel mauris. Sed eget egestas quam, id imperdiet quam. In eleifend tempor erat, eget scelerisque tellus imperdiet nec. Fusce ornare porttitor ante.</p>
-					</div>
-				</div>
-
-				<div class="row etiquetas">
-					<a><i class="fa fa-tag"></i><p>Html5</p></a>
-					<a><i class="fa fa-tag"></i><p>CSS3</p></a>
-					<a><i class="fa fa-tag"></i><p>Jquery</p></a>
-				</div>
-			</div>
-  	<% end %>
-	</div>
-</div>
-

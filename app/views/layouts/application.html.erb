@@ -11,8 +11,19 @@
   </head>
 
   <body>
+    <div class="row">
+      <div class="large-2 columns">
+        <%= render "shared/menu" %>
+      </div>
 
-    <%= yield %>
+      <div class="large-6 large-offset-3 columns">
+        <%= yield %>
+      </div>
+
+      <div class="large-3 columns">
+        <%= render "shared/publicidad" %>
+      </div>
+    </div>
     <%= render"shared/footer" %>
     <%= javascript_include_tag "application" %>
   </body>

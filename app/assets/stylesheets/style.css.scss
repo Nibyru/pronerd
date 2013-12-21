@@ -20,6 +20,7 @@ $verde: #82AD38;
 
 
 // - - - - SECTION - - - - //
+
 #frases{
 	background:#fff url(comillas.png) no-repeat 100%;
 	padding:20px;
@@ -33,6 +34,7 @@ $verde: #82AD38;
 .nuevos-post{
 	text-align:center;
 	margin-top: 50px;
+	margin-bottom:30px;
 	.orbit-container{
 		.orbit-slide-number{display: none;}
 		img{width:100%;}
@@ -56,8 +58,8 @@ $verde: #82AD38;
 // - - - MUESTRAS DE POST - - - //
 .minipost{
 	background:#fff;
-	margin: 0 0.5%;
-	width: 32.3%;
+	float: none !important;
+	margin-bottom:30px;
 	h5{
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -77,7 +79,7 @@ $verde: #82AD38;
 		text-align: center;
 		border-right:1px solid #E5E5E5;
 		margin:10px 0;
-		padding:0;
+		padding:0 10px;
 		span{
 			display: block;
 			text-align: left;
@@ -146,4 +148,3 @@ footer{
 	}
 }
 // - - FIN DE FOOTER - - //
-

@@ -1,20 +1,22 @@
 <nav>
-	<%= image_tag("prog-nerd.jpg", class:"logo") %>
+	<%= link_to(root_path) do %>
+		<%= image_tag("prog-nerd.jpg", class:"logo") %>
+	<% end %>
 	<p>Apuntes y opiniones desde el punto de vista de un alumno.</p>
 
 	<ul class="menu">
-			<li class="active"><%= link_to(root_path) do %>Home<% end %></li>
-			<li class="clickmenu"><a> Teoria de programacion<i class="fa fa-sort-down"></i></a>
+			<li class="active"><%= link_to 'Home', (root_path) %></li>
+			<li class="clickmenu"><a> Teoría de programación<i class="fa fa-sort-down"></i></a>
 				<ul class="submenu">
-					<li>Link 1</li>
-					<li>Link 2</li>
-					<li>Link 3</li>
+					<li><a>Link 1</a></li>
+					<li><a>Link 2</a></li>
+					<li><a>Link 3</a></li>
 				</ul>
 			</li>
-			<li><%= link_to(root_path) do %> Lenguajes <% end %></li>
-			<li><%= link_to(root_path) do %> Programacion Web <% end %></li>
-			<li><%= link_to(root_path) do %> Programacion de juegos <% end %></li> 
-			<li><%= link_to(root_path) do %> Contacto <% end %></li>
+			<li><%= link_to(categoria_path) do %> Lenguajes <% end %></li>
+			<li><%= link_to(root_path) do %> Programación Web <% end %></li>
+			<li><%= link_to(root_path) do %> Programación de juegos <% end %></li> 
+			<li><%= link_to 'Contacto', (root_path) %></li>
 	</ul>
 
 	<form id="searchbox" action="">
